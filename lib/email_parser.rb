@@ -21,7 +21,6 @@ def parse
   if @email.include? ", " && " "
     first_split = @email.split(", ").join(" ")
     first_split.split(/\s/)
-    binding.pry
   elsif @email.include? " "
           @email.split(/\s/)
   elsif @email.include? ", "
