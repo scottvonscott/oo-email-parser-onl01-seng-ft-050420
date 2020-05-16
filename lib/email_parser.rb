@@ -19,7 +19,7 @@ end
 def parse
   first_split = []
   if @email.include? ", " && " "
-    first_split = @email.split(", ")
+    first_split = @email.split(", ").join()
     binding.pry
     first_split.split(/\s/)
   elsif @email.include? " "
