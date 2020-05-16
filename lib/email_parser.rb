@@ -17,6 +17,7 @@ def parse
 elsif @email include? " "
   @email.split(/\s/)
 end
+end
 
 
 
