@@ -12,6 +12,7 @@ end
 
 
 def parse
+  if @email.include? ", "
   @email.split(", ")
 end
 
