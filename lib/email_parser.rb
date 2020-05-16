@@ -11,21 +11,21 @@ def initialize(email_addresses)
 end
 
 
-def parse
-  @email.split(/[, \s]/)
-end
-
 # def parse
-#   first_split = []
-#   if @email.include? ", " && " "
-#     first_split = @email.split(", ")
-#     first_split.split(/\s/)
-#   elsif @email.include? " "
-#           @email.split(/\s/)
-#   elsif @email.include? ", "
-#           @email.split(", ")
+#   @email.split(/[, \s]/)
 # end
-# end
+
+def parse
+  first_split = []
+  if @email.include? ", " && " "
+    first_split = @email.split(", ")
+    first_split.split(/\s/)
+  elsif @email.include? " "
+          @email.split(/\s/)
+  elsif @email.include? ", "
+          @email.split(", ")
+end
+end
 
 
 
