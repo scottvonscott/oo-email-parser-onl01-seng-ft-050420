@@ -20,11 +20,11 @@ def parse
   first_split = ""
   if @email.include? ", " && " "
     first_split = @email.split(", ").join(" ")
-    first_split.split(/\s/)
+    first_split.split(/\s/).uniq
   elsif @email.include? " "
-          @email.split(/\s/)
+          @email.split(/\s/).uniq
   elsif @email.include? ", "
-          @email.split(", ")
+          @email.split(", ").uniq
 end
 end
 
