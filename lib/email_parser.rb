@@ -14,8 +14,8 @@ end
 def parse
   first_split = []
   if @email.include? ", " && " "
-    first_split = @email.split(/\s/)
-    first_split.split(", ")
+    first_split = @email.split(", ")
+    first_split.split(/\s/)
   elsif @email.include? " "
           @email.split(/\s/)
   elsif @email.include? ", "
