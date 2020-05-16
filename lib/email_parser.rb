@@ -14,6 +14,7 @@ end
 def parse
   if @email.include? ", "
   @email.split(", ")
+elsif @email include? " "
 end
 
 
