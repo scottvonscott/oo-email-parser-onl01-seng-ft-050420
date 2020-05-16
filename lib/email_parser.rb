@@ -12,6 +12,7 @@ end
 
 
 def parse
+  first_split = []
   if @email.include? ", "
   @email.split(", ")
   elsif @email.include? " "
