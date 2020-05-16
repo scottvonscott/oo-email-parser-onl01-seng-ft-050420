@@ -13,13 +13,13 @@ end
 
 def parse
   first_split = []
-  if @email.include? ", "
-  @email.split(", ")
+  if @email.include? ", " && " "
+    first_split = @email.split(/\s/)
+    first_split.split(", ")
   elsif @email.include? " "
-  @email.split(/\s/)
-elsif @email.include? ", " && " "
-  first_split = @email.split(/\s/)
-  first_split.split(", ")
+          @email.split(/\s/)
+  elsif @email.include? ", "
+          @email.split(", ")
 end
 end
 
