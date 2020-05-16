@@ -13,6 +13,7 @@ end
 
 def parse
   @email.splitl(/[\s, ]/)
+end
 
 # def parse
 #   first_split = []
